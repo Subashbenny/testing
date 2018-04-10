@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/begin_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="@id/begin_fragment"
+        app:layout_constraintLeft_toLeftOf="@id/begin_fragment"
+        app:layout_constraintRight_toRightOf="@id/begin_fragment"
+        app:srcCompat="@drawable/mai_logo_white" />
+
+    <Button
+        android:id="@+id/begin"
+        style="@style/Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Ok, let's get started"
+        app:layout_constraintBottom_toBottomOf="@id/begin_fragment" />
+
+    <com.parentof.mai.ui.mai.MaiView
+        android:id="@+id/mai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/begin_fragment" />
+
+</android.support.constraint.ConstraintLayout>

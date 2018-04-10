@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/enter_otp_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="@id/enter_otp_fragment"
+        app:layout_constraintLeft_toLeftOf="@id/enter_otp_fragment"
+        app:layout_constraintRight_toRightOf="@id/enter_otp_fragment"
+        app:srcCompat="@drawable/mai_logo_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:background="#33000000"
+        app:layout_constraintBottom_toTopOf="@id/phone_otp_button">
+
+        <EditText
+            android:id="@+id/et_phone_otp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="112dp"
+            android:layout_marginRight="112dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="OTP"
+            android:inputType="phone"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/phone_otp_button"
+        style="@style/Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:enabled="false"
+        android:text="Verify &amp; Continue"
+        app:layout_constraintBottom_toBottomOf="@id/enter_otp_fragment" />
+
+</android.support.constraint.ConstraintLayout>

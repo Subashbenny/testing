@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sign_in_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Login with"
+        android:textColor="@color/edit_hint"
+        app:layout_constraintBottom_toTopOf="@id/external_sign_in" />
+
+    <LinearLayout
+        android:id="@+id/external_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:background="#33000000"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/mai_account_button">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebook_sign_in_button"
+            style="@style/Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Facebook" />
+
+        <Button
+            android:id="@+id/google_sign_in_button"
+            style="@style/Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Google" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/mai_account_button"
+        style="@style/Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Create Mai Account"
+        app:layout_constraintBottom_toBottomOf="@id/sign_in_fragment" />
+
+</LinearLayout>

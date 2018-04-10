@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginBottom="85dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mai_chat_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.3dp"
+                android:layout_marginLeft="51.3dp"
+                android:layout_marginRight="51.3dp"
+                android:background="@drawable/mai_chat_3"
+                android:textColor="#80404040"
+                tools:text="Great! Welcome" />
+
+            <TextView
+                android:id="@+id/mai_chat_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.3dp"
+                android:layout_marginLeft="51.3dp"
+                android:layout_marginRight="51.3dp"
+                android:background="@drawable/mai_chat_2"
+                android:textColor="#c0404040"
+                tools:text="The most Intelligent Personal Assistant , Developed solely to aid you in raising your child." />
+
+
+            <TextView
+                android:id="@+id/mai_chat_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginLeft="51.3dp"
+                android:layout_marginRight="51.3dp"
+                android:background="@drawable/mai_chat_1"
+                android:focusableInTouchMode="true"
+                android:textColor="#404040"
+                tools:text="Let us start with your First Name" />
+
+            <ImageView
+                android:id="@+id/mai_logo"
+                android:layout_width="39.3dp"
+                android:layout_height="37.7dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:clickable="true"
+                android:src="@drawable/mai_chat" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</merge>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mai</string>
+
+    <string name="some_error">Some Error Occurred!</string>
+
+    <string name="empty_screen">We do not have anything\nhere right now.</string>
+    <string name ="facebook_app_id">235063703724380</string>
+
+</resources>
